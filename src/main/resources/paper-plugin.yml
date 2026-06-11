@@ -1,0 +1,42 @@
+name: Silentium
+version: '${project.version}'
+main: org.IlSuBb.silentium.Silentium
+api-version: '1.21'
+description: Advanced Anti-Cheat plugin with Blatant, Ghost and Anarchy detection
+authors:
+  - IlSuBb
+
+dependencies:
+  server:
+    Citizens:
+      load: BEFORE
+      required: false
+    WorldGuard:
+      load: BEFORE
+      required: false
+    Essentials:
+      load: BEFORE
+      required: false
+
+commands:
+  silentium:
+    description: Silentium Anti-Cheat main command
+    aliases:
+      - sac
+      - anticheat
+    permission: silentium.mod
+    usage: /<command> <subcommand>
+
+permissions:
+  silentium.admin:
+    description: Full administrative access to Silentium (all commands + logs)
+    default: op
+  silentium.mod:
+    description: Moderator access — receive alerts and use moderation commands
+    default: false
+  silentium.alerts:
+    description: Receive cheat detection alerts without other mod commands
+    default: false
+  silentium.bypass:
+    description: Bypass all anti-cheat checks
+    default: false

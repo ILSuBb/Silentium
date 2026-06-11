@@ -1,0 +1,60 @@
+# =============================================
+#   Silentium — Blatant Check Settings
+#   These are aggressive/obvious cheats
+# =============================================
+
+fly:
+  enabled: true
+  max-vl: 60
+  vl-per-flag: 2
+
+speed:
+  enabled: true
+  max-vl: 60
+  vl-per-flag: 1
+  # Allowed multiplier over expected max speed (1.15 = 15% tolerance)
+  multiplier: 1.15
+
+killaura:
+  enabled: true
+  max-vl: 50
+  vl-per-flag: 3
+  # Maximum angle (degrees) between player look direction and target direction
+  max-angle: 90.0
+
+reach:
+  enabled: true
+  max-vl: 40
+  vl-per-flag: 2
+  # Flag attacks above this distance (blocks)
+  max-distance: 3.6
+
+nofall:
+  enabled: true
+  max-vl: 30
+  vl-per-flag: 2
+  # Minimum fall distance before checking for missing damage (blocks)
+  min-fall-distance: 3.5
+
+autoclicker:
+  enabled: true
+  max-vl: 35
+  vl-per-flag: 2
+  # Maximum allowed CPS before flagging
+  max-cps: 20
+
+antiknockback:
+  enabled: true
+  max-vl: 40
+  vl-per-flag: 2
+  # Minimum ratio of received-to-expected knockback (< = suspicious)
+  min-velocity-ratio: 0.25
+
+scaffold:
+  enabled: true
+  max-vl: 30
+  vl-per-flag: 3
+  # Minimum horizontal speed (blocks/s) to trigger scaffold check
+  min-speed: 1.5
+  # Consecutive scaffold places required before flagging
+  consecutive-threshold: 4

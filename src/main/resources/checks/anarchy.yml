@@ -1,0 +1,38 @@
+# =============================================
+#   Silentium — Anarchy Check Settings
+#   Utility/anarchy client detection
+# =============================================
+
+xray:
+  enabled: true
+  max-vl: 60
+  vl-per-flag: 2
+  # Minimum valuable ores found in window to start flagging
+  ore-threshold: 3
+  # Time window for ore counting (seconds)
+  window-seconds: 30
+  # If ore:stone ratio is below this, flag (low stone = direct mining to ores)
+  stone-ratio-threshold: 0.15
+  # Ores considered "valuable" for detection
+  track-ores:
+    - DIAMOND_ORE
+    - DEEPSLATE_DIAMOND_ORE
+    - ANCIENT_DEBRIS
+    - EMERALD_ORE
+    - DEEPSLATE_EMERALD_ORE
+    - GOLD_ORE
+    - DEEPSLATE_GOLD_ORE
+
+fastplace:
+  enabled: true
+  max-vl: 20
+  vl-per-flag: 2
+  # Maximum blocks placed per second (vanilla max ~4-5)
+  max-blocks-per-second: 8
+
+phase:
+  enabled: true
+  max-vl: 30
+  vl-per-flag: 3
+  # Ray-trace step size when checking for blocks in player's path (blocks)
+  check-step: 0.25

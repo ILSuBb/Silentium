@@ -1,0 +1,60 @@
+# =============================================
+#   Silentium Anti-Cheat — Messages
+#   All messages support MiniMessage format.
+#   Variables: {prefix}, {player}, {check}, {vl}, {category}
+# =============================================
+
+prefix: '<gray>[<aqua>Silentium<gray>]'
+
+no-permission: '{prefix} <red>У вас нет прав для этого.'
+player-not-found: '{prefix} <red>Игрок <white>{player} <red>не найден.'
+player-only: '{prefix} <red>Эта команда доступна только игрокам.'
+invalid-args: '{prefix} <red>Неверные аргументы. Используйте <white>/silentium help'
+reload-success: '{prefix} <green>Конфигурация перезагружена <dark_gray>({time}<dark_gray>).'
+
+# /silentium info
+info-header: '<gray>────────── <aqua>Silentium <gray>» <white>{player} <gray>──────────'
+info-check-line: ' <dark_gray>• <yellow>{check} <gray>(<yellow>{category}<gray>) <dark_gray>» <white>VL: {vl}'
+info-no-violations: '{prefix} <green>У игрока <white>{player} <green>нет нарушений.'
+info-footer: '<gray>──────────────────────────────────'
+
+# /silentium alerts
+alerts-enabled: '{prefix} <green>Оповещения <green>включены.'
+alerts-disabled: '{prefix} <yellow>Оповещения <red>выключены.'
+
+# /silentium verbose
+verbose-enabled: '{prefix} <green>Подробный режим для <white>{player} <green>включён.'
+verbose-disabled: '{prefix} <yellow>Подробный режим для <white>{player} <yellow>выключен.'
+
+# /silentium reset
+reset-success: '{prefix} <green>Нарушения игрока <white>{player} <green>сброшены.'
+
+# /silentium kick
+kick-success: '{prefix} <green>Игрок <white>{player} <green>кикнут. Причина: <white>{reason}'
+kick-message: '<red>Вы были кикнуты администрацией.\n<gray>Причина: <white>{reason}'
+
+# /sac spec
+spec-started: '{prefix} <aqua>Вы начали наблюдение за <white>{player}<aqua>. <gray>(/sac spec stop — остановить)'
+spec-stopped: '{prefix} <green>Наблюдение завершено. Вы возвращены на прежнюю позицию.'
+spec-not-active: '{prefix} <yellow>У вас нет активного наблюдения.'
+spec-target-offline: '{prefix} <yellow>Игрок <white>{player} <yellow>вышел из игры. Наблюдение прекращено.'
+spec-teleporting: '{prefix} <gray>Игрок <white>{player} <gray>отдалился — телепортация...'
+
+# /silentium whitelist
+whitelist-added: '{prefix} <green>Игрок <white>{player} <green>добавлен в белый список.'
+whitelist-removed: '{prefix} <yellow>Игрок <white>{player} <yellow>удалён из белого списка.'
+whitelist-already: '{prefix} <yellow>Игрок <white>{player} <yellow>уже в белом списке.'
+whitelist-not-in: '{prefix} <red>Игрок <white>{player} <red>не в белом списке.'
+
+# /silentium status
+status-header: '<gray>────────── <aqua>Silentium Status <gray>──────────'
+status-checks: '<gray>Активных чеков: <white>{enabled}<gray>/<white>{total}'
+status-players: '<gray>Отслеживается игроков: <white>{players}'
+status-uptime: '<gray>Время работы: <white>{uptime}'
+
+# /silentium version
+version-info: '{prefix} <gray>Версия: <white>{version} <gray>| Автор: <white>IlSuBb <gray>| MC: <white>1.21.11'
+
+# /silentium help
+help-header: '<gray>────────── <aqua>Silentium <gray>» Help <gray>──────────'
+help-line: ' <aqua>/{cmd} <gray>{args} <dark_gray>» <white>{desc}'

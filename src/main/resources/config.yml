@@ -1,0 +1,59 @@
+# =============================================
+#   Silentium Anti-Cheat — Main Configuration
+# =============================================
+
+# Enable debug mode (verbose console output for admins)
+debug: false
+
+# Message prefix (MiniMessage format)
+prefix: '<gray>[<aqua>Silentium<gray>]'
+
+# Logging settings
+log:
+  enabled: true
+  # Write violations to daily log files in plugins/Silentium/logs/
+  file: true
+  # Print all violations to console (not just flagged in-game)
+  console-debug: false
+
+# In-game notification settings
+notifications:
+  # Broadcast alerts to all online players with silentium.alerts / silentium.mod / silentium.admin
+  broadcast-to-staff: true
+  # Alert message format (MiniMessage). Variables: {player}, {check}, {vl}, {category}, {info}
+  format: '<gray>[<aqua>Silentium<gray>] <red>{player} <gray>failed <red>{check} <gray>(VL: <red>{vl}<gray>, <yellow>{category}<gray>) <dark_gray>» <white>{info}'
+
+# Lag compensation — adjusts thresholds based on player ping
+lag-compensation:
+  enabled: true
+  # Ping above this value won't receive additional compensation (ms)
+  max-compensated-ping: 300
+
+# VL (Violation Level) decay over time
+vl-decay:
+  enabled: true
+  # How often to reduce VL (ticks; 200 = 10 seconds)
+  interval-ticks: 200
+  # Amount of VL to subtract each interval per check
+  amount: 1
+
+# /sac spec settings
+spec:
+  # How many blocks away from the target before the mod is auto-teleported
+  follow-distance: 15
+  # Give night vision (no particles, no HUD icon) to the mod during spec
+  night-vision: true
+  # Make the suspect glow — visible ONLY to the mod, not to other players
+  glow:
+    enabled: true
+    # Any NamedTextColor name: RED, BLUE, GREEN, YELLOW, AQUA, GOLD, WHITE, LIGHT_PURPLE, etc.
+    color: YELLOW
+
+# Plugin compatibility settings
+compatibility:
+  # Ignore Citizens NPCs in all checks
+  citizens: true
+  # Respect WorldGuard regions (bypass checks in protected regions)
+  worldguard: false
+  # Use EssentialsX ban/tempban commands for punishments
+  essentialsx: true

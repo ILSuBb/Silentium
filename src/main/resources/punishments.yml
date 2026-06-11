@@ -1,0 +1,161 @@
+# =============================================
+#   Silentium Anti-Cheat — Punishment Config
+#   VL thresholds per check → action
+#   Actions: ALERT, KICK, TEMPBAN, BAN
+# =============================================
+
+# --- BLATANT CHECKS ---
+
+Fly:
+  5:
+    action: ALERT
+  20:
+    action: KICK
+    message: 'Подозрение в использовании Fly-чита'
+  40:
+    action: TEMPBAN
+    duration: '30m'
+    message: 'Fly-чит (автоматическая блокировка)'
+  60:
+    action: BAN
+    message: 'Использование читов [Fly]'
+
+Speed:
+  5:
+    action: ALERT
+  20:
+    action: KICK
+    message: 'Подозрение в использовании Speed-чита'
+  40:
+    action: TEMPBAN
+    duration: '30m'
+    message: 'Speed-чит (автоматическая блокировка)'
+
+KillAura:
+  5:
+    action: ALERT
+  15:
+    action: KICK
+    message: 'Подозрение в использовании KillAura'
+  30:
+    action: TEMPBAN
+    duration: '60m'
+    message: 'KillAura (автоматическая блокировка)'
+  50:
+    action: BAN
+    message: 'Использование читов [KillAura]'
+
+Reach:
+  5:
+    action: ALERT
+  20:
+    action: KICK
+    message: 'Подозрение в Reach-чите'
+  40:
+    action: TEMPBAN
+    duration: '30m'
+    message: 'Reach-чит (автоматическая блокировка)'
+
+NoFall:
+  5:
+    action: ALERT
+  20:
+    action: KICK
+    message: 'Подозрение в NoFall-чите'
+
+AutoClicker:
+  5:
+    action: ALERT
+  20:
+    action: KICK
+    message: 'Подозрение в AutoClicker'
+  35:
+    action: TEMPBAN
+    duration: '30m'
+    message: 'AutoClicker (автоматическая блокировка)'
+
+AntiKnockback:
+  5:
+    action: ALERT
+  20:
+    action: KICK
+    message: 'Подозрение в AntiKnockback-чите'
+  40:
+    action: TEMPBAN
+    duration: '30m'
+    message: 'AntiKnockback (автоматическая блокировка)'
+
+Scaffold:
+  5:
+    action: ALERT
+  20:
+    action: KICK
+    message: 'Подозрение в Scaffold-чите'
+
+# --- GHOST CHECKS ---
+
+GhostReach:
+  10:
+    action: ALERT
+  40:
+    action: KICK
+    message: 'Подозрение в Ghost Reach'
+
+AimAssist:
+  10:
+    action: ALERT
+  40:
+    action: KICK
+    message: 'Подозрение в AimAssist'
+
+Velocity:
+  10:
+    action: ALERT
+  40:
+    action: KICK
+    message: 'Подозрение в Velocity-чите'
+
+Timer:
+  10:
+    action: ALERT
+  30:
+    action: KICK
+    message: 'Подозрение в Timer-чите'
+
+GhostAutoClicker:
+  15:
+    action: ALERT
+  50:
+    action: KICK
+    message: 'Подозрение в AutoClicker (Ghost)'
+
+# --- ANARCHY CHECKS ---
+
+XRay:
+  10:
+    action: ALERT
+  30:
+    action: KICK
+    message: 'Подозрение в использовании X-Ray'
+  60:
+    action: TEMPBAN
+    duration: '1d'
+    message: 'X-Ray (автоматическая блокировка)'
+
+FastPlace:
+  5:
+    action: ALERT
+  20:
+    action: KICK
+    message: 'Подозрение в FastPlace-чите'
+
+Phase:
+  5:
+    action: ALERT
+  15:
+    action: KICK
+    message: 'Подозрение в Phase-чите'
+  30:
+    action: TEMPBAN
+    duration: '30m'
+    message: 'Phase-чит (автоматическая блокировка)'

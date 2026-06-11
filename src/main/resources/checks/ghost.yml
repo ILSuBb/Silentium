@@ -1,0 +1,59 @@
+# =============================================
+#   Silentium — Ghost Check Settings
+#   These are subtle/hard-to-see cheats
+# =============================================
+
+reach:
+  enabled: true
+  max-vl: 50
+  vl-per-flag: 1
+  # Flag attacks above this distance (blocks, ghost range)
+  max-distance: 3.5
+  # Ignore distances below this (normal reach, no flag)
+  min-distance: 3.1
+
+aimassist:
+  enabled: true
+  max-vl: 50
+  vl-per-flag: 1
+  # Rotation snap threshold: flag if aim snaps > this degrees in one tick before attack
+  snap-threshold: 35.0
+  # Minimum GCD of rotation deltas (below = suspiciously robotic)
+  min-gcd: 0.005
+
+velocity:
+  enabled: true
+  max-vl: 40
+  vl-per-flag: 1
+  # Minimum ratio of received-to-expected knockback (subtle reduction)
+  min-velocity-ratio: 0.5
+
+timer:
+  enabled: true
+  max-vl: 30
+  vl-per-flag: 2
+  # Maximum movement events per second before flagging (normal ~20)
+  max-events-per-second: 25
+
+autoclicker:
+  enabled: true
+  max-vl: 50
+  vl-per-flag: 1
+  # Ghost CPS range (flagged with lower severity)
+  max-cps: 20
+  min-cps: 14
+
+ghosttarget:
+  enabled: true
+  max-vl: 15
+  vl-per-flag: 1
+  # Minimum angle to ghost before the snap (degrees) — must be looking away from ghost
+  min-prev-angle: 25.0
+  # Maximum angle to ghost after the snap (degrees) — nearly perfect aim
+  max-final-angle: 3.5
+  # Minimum rotation delta in one tick (degrees) to count as a snap
+  min-snap-delta: 20.0
+  # Distance behind the player to spawn the ghost entity (blocks)
+  ghost-distance: 6.0
+  # Grace period after ghost placement before checking (ms)
+  grace-ms: 4000
